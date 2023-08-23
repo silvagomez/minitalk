@@ -6,7 +6,7 @@
 #    By: dsilva-g <dsilva-g@student.42urduliz.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/21 00:04:57 by dsilva-g          #+#    #+#              #
-#    Updated: 2023/08/23 00:18:42 by dsilva-g         ###   ########.fr        #
+#    Updated: 2023/08/23 10:55:26 by dsilva-g         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -111,13 +111,16 @@ fclean			:	clean
 re				:	fclean all
 
 norm			:
-					norminette $(LIBFT_PATH) $(SRC_PATH) $(INCLUDE_PATH)	
+					norminette $(LIBFT_PATH) $(SRC_PATH) $(INCLUDE_PATH)
+
+norm_bonus		:	
+					norminette $(SRC_BPATH) $(INCLUDE_BPATH)
 
 #------------------------------------------------------------------------------#
 #   SPEC                                                                       #
 #------------------------------------------------------------------------------#
 
-.PHONY			:	all clean fclean re bonus client server client_bonus server_bonus
+.PHONY			:	all clean fclean re bonus
 
 #------------------------------------------------------------------------------#
 #   COLORS                                                                     #
