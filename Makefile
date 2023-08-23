@@ -6,7 +6,7 @@
 #    By: dsilva-g <dsilva-g@student.42urduliz.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/21 00:04:57 by dsilva-g          #+#    #+#              #
-#    Updated: 2023/08/23 10:55:26 by dsilva-g         ###   ########.fr        #
+#    Updated: 2023/08/23 13:37:40 by dsilva-g         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,8 @@ NAME_SBONUS		:=	server_bonus
 #------------------------------------------------------------------------------#
 
 CC				:=	cc
-#CFLAGS			:=	-Wall -Wextra -Werror -fsanitize=address -g3
-CFLAGS			:=	-Wall -Wextra -Werror
+CFLAGS			:=	-Wall -Wextra -Werror -fsanitize=address -g3
+#CFLAGS			:=	-Wall -Wextra -Werror
 
 INCLUDE_PATH	:=	include/
 INCLUDE			:=	$(INCLUDE_PATH)minitalk.h
@@ -111,10 +111,7 @@ fclean			:	clean
 re				:	fclean all
 
 norm			:
-					norminette $(LIBFT_PATH) $(SRC_PATH) $(INCLUDE_PATH)
-
-norm_bonus		:	
-					norminette $(SRC_BPATH) $(INCLUDE_BPATH)
+					norminette $(LIBFT_PATH) $(SRC_PATH) $(INCLUDE_PATH) $(SRC_BPATH) $(INCLUDE_BPATH)
 
 #------------------------------------------------------------------------------#
 #   SPEC                                                                       #
