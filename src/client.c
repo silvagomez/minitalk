@@ -6,19 +6,19 @@
 /*   By: dsilva-g <dsilva-g@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/18 16:49:19 by dsilva-g          #+#    #+#             */
-/*   Updated: 2023/08/22 23:50:20 by dsilva-g         ###   ########.fr       */
+/*   Updated: 2023/08/23 12:51:24 by dsilva-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-void	error_handling(char *s)
+static void	error_handling(char *s)
 {
 	ft_printf("%s\n", s);
 	exit(1);
 }
 
-int	check_argv(char *s1, char *s2)
+static int	check_argv(char *s1, char *s2)
 {
 	int	idx;
 	int	pid;
