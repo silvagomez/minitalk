@@ -6,7 +6,7 @@
 /*   By: dsilva-g <dsilva-g@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/20 20:26:05 by dsilva-g          #+#    #+#             */
-/*   Updated: 2023/08/23 00:55:03 by dsilva-g         ###   ########.fr       */
+/*   Updated: 2023/08/23 12:52:29 by dsilva-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ static void	send_message(char *s, pid_t server_pid)
 	ft_printf("Message size was: %d\n", idx);
 }
 
-void	feedback_server(int sig)
+static void	feedback_server(int sig)
 {
 	if (sig == SIGUSR2)
 		ft_printf("SERVER : Message received\n");
